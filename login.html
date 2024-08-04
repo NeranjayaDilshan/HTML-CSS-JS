@@ -112,10 +112,15 @@
         console.log("(maths<sinhala)||(sinhala>90) : ", (maths < sinhala) || (sinhala > 90));//false
 
 
-        console.log("!(maths >85) : ",!(maths >85));
-        
+        console.log("!(maths >85) : ", !(maths > 85));
 
+        if (maths > sinhala) {
+            console.log("Math is large");
+        } else {
+            console.log("Math is Less");
+        }
 
+        (maths > sinhala) ? console.log("Math is large") : console.log("Math is Less");
 
 
     </script>
