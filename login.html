@@ -32,15 +32,18 @@
                 <img src="/assets/ijse@1x.png" alt="">
             </div>
             <h1 class="text-center">Login</h1>
-            <div class="mb-3">
-                <label for="username" class="form-label">User Name</label>
-                <input type="text" class="form-control" id="username" placeholder="Kamal">
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="password">
-            </div>
-            <button type="button" class="btn btn-primary w-100">Login</button>
+            <form onsubmit="validate(event)">
+                <div class="mb-3">
+                    <label for="username" class="form-label">User Name</label>
+                    <input type="text" class="form-control" id="username" placeholder="Kamal">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="password">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+            </form>
+
         </div>
     </div>
 
@@ -50,6 +53,24 @@
         crossorigin="anonymous"></script>
 
     <script>
+        function validate(event) {
+            event.preventDefault();
+            console.log("====================");
+            let username = document.getElementById('username').value
+            console.log("username : ", username);
+            let password = document.getElementById('password').value
+            console.log("paasowrd : ", password);
+
+            if (username != '' && password != '') {
+                console.log("Validation is ok");
+            } else {
+                console.log("Invalid");
+            }
+
+        }
+    </script>
+
+    <!-- <script>
         // window.alert('Hello CMJD 107');
         // document.write("Hello");
         // console.log("Hello Console ")
@@ -214,13 +235,7 @@
 
         console.log(arrow_function(30, 80, 60));
 
-
-
-
-
-
-
-    </script>
+    </script> -->
 </body>
 
 </html>
