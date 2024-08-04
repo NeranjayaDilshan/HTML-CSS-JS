@@ -4,55 +4,7 @@
 <head>
     <title>CSS</title>
     <style>
-        div {
-
-            /* equal */
-            /* margin-top: 20px;
-            margin-right: 20px;
-            margin-bottom: 20px;
-            margin-left: 20px; */
-
-            /* margin: 20px; */
-
-            /* diffrent */
-            /* margin-top: 20px;
-            margin-right: 40px;
-            margin-bottom:30px;
-            margin-left: 50px; */
-
-            /* margin: 20px 40px 30px 50px; */
-
-            /* margin-top: 20px;
-            margin-right: 40px;
-            margin-bottom:30px;
-            margin-left: 40px; */
-
-            /* margin: 20px 40px 30px; */
-
-            /* margin-top: 20px;
-            margin-right: 40px;
-            margin-bottom: 20px;
-            margin-left: 40px; */
-
-            margin: 20px 40px;
-
-            /* border-width: 10px;
-            border-color: red;
-            border-style: solid; */
-
-            border: 5px solid red;
-
-            /* border-radius: 10px; */
-            border-top-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            border-bottom-color: green;
-
-            /* padding: 20px; */
-            /* padding: 10px 20px 30px 40px; */
-            /* padding: 20px 30px 40px; */
-            padding: 20px 30px;
-        }
-
+       
         #serif {
             font-family: 'Times New Roman', Times, serif;
             font-size: 30px;
@@ -63,10 +15,25 @@
         #sans_serif {
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        /*descendant selector  */
+        div p {
+            background-color: red;
+        }
     </style>
 </head>
 
 <body>
+    <div>
+        This is div element
+        <p>this is para inside div</p>
+        <h1>H1 inside div</h1>
+        <section>
+            <p>p tag inside section</p>
+        </section>
+    </div>
+    <p>p tag outside div</p>
+
     <div>This is DIV</div>
     <p id="serif">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, dolorum ducimus? Animi autem est
         ratione rem
