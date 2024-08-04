@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Layouts</title>
+    <meta name="keywords" content="HTML,CSS,JS,WEB page">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .header {
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: row;
+            padding: 5px 10px;
+        }
+
+        .logo {
+            width: 40%;
+        }
+
+        .nav {
+            width: 60%;
+        }
+
+        .nav_bar {
+            list-style: none;
+        }
+        .nav_bar>li{
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .nav_bar>li:hover{
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <!--logo  -->
+        <div class="logo">
+            <img src="/assets/ijse@1x.png" alt="">
+        </div>
+
+        <div class="nav">
+            <ul class="nav_bar">
+                <li>Home</li>
+                <li>Contact us</li>
+                <li>About</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
