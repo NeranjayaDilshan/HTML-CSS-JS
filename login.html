@@ -132,6 +132,36 @@
 
         }
 
+        const cars = ["BMW", "AUDI", "BENZ"]
+        console.log(cars);
+        cars.push("ABC")
+        console.log(cars);
+        cars.pop()
+        console.log(cars);
+        console.log(cars.length);
+
+        for (let i = 0; i < cars.length; i++) {
+            console.log(cars[i]);
+
+        }
+
+        // for in
+        for (let index in cars) {
+            console.log(index);
+            console.log(cars[index]);
+        }
+
+        // for of
+        for (let value of cars) {
+            console.log(value);
+
+        }
+
+
+
+
+
+
 
     </script>
 </body>
