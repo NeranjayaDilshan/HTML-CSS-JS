@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Layouts</title>
+    <meta name="keywords" content="HTML,CSS,JS,WEB page">
+
+    <style>
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            left: 50px;
+            top: 50px;
+        }
+
+        .fixed {
+            border: 1px solid red;
+            background-color: aqua;
+            position: fixed;
+            top: 0;
+            width: 500px;
+        }
+
+        .sticky {
+            border: 1px solid red;
+            position: sticky;
+            top: 50px;
+        }
+
+        .main {
+            border: 1px solid red;
+            width: 500px;
+            height: 200px;
+            position: relative;
+        }
+        .absolute{
+            border: 1px solid green;
+            width: 100px;
+            height: 50px;
+            position: absolute;
+            right: 100px;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!--relative  -->
+    <!-- <div class="relative">This is relative Element</div> -->
+
+
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolor non suscipit adipisci, veritatis
+        facere officia quisquam reiciendis aliquam, atque temporibus, culpa voluptatibus doloribus? Laboriosam enim
+        officiis at obcaecati numquam.</p>
+    <div class="main">
+        this is div element
+        <div class="absolute">
+            this is absolute element
+        </div>
+    </div>
+    <!-- sticky -->
+    <div class="sticky">sticky position</div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolor non suscipit adipisci, veritatis
+        facere officia quisquam reiciendis aliquam, atque temporibus, culpa voluptatibus doloribus? Laboriosam enim
+        officiis at obcaecati numquam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolor non suscipit adipisci, veritatis
+        facere officia quisquam reiciendis aliquam, atque temporibus, culpa voluptatibus doloribus? Laboriosam enim
+        officiis at obcaecati numquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolor non suscipit adipisci, veritatis
+        facere officia quisquam reiciendis aliquam, atque temporibus, culpa voluptatibus doloribus? Laboriosam enim
+        officiis at obcaecati numquam.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolor non suscipit adipisci, veritatis
+        facere officia quisquam reiciendis aliquam, atque temporibus, culpa voluptatibus doloribus? Laboriosam enim
+        officiis at obcaecati numquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur dolor non suscipit adipisci, veritatis
+        facere officia quisquam reiciendis aliquam, atque temporibus, culpa voluptatibus doloribus? Laboriosam enim
+        officiis at obcaecati numquam.</p>
+
+    <!--fixed  -->
+    <div class="fixed">position Fixed</div>
+
+
+
+
+</body>
+
+</html>
