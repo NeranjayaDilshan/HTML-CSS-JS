@@ -28,14 +28,46 @@
         .nav_bar {
             list-style: none;
         }
-        .nav_bar>li{
+
+        .nav_bar>li {
             display: inline-block;
             margin-right: 20px;
         }
 
-        .nav_bar>li:hover{
+        .nav_bar>li:hover {
             color: red;
             cursor: pointer;
+        }
+
+        .body-image {
+            height: 500px;
+            background-image: url('/assets/download\ \(1\).jpg');
+            background-size: cover;
+            position: relative;
+        }
+
+        .body-text {
+            width: 500px;
+            background-color: rgba(255, 255, 255, 0.7);
+            position: absolute;
+            right: 100px;
+            top: 100px;
+            padding: 20px 30px;
+            text-align: end;
+            border-radius: 20px;
+        }
+
+        .body-text>a {
+            border: 1px solid red;
+            padding: 10px;
+            border-radius: 20px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .body-text>a:hover {
+            background-color: red;
+            color: white;
         }
     </style>
 </head>
@@ -48,6 +80,7 @@
             <img src="/assets/ijse@1x.png" alt="">
         </div>
 
+        <!-- nav -->
         <div class="nav">
             <ul class="nav_bar">
                 <li>Home</li>
@@ -56,6 +89,19 @@
             </ul>
         </div>
 
+    </div>
+
+    <!-- body-content -->
+    <div class="body-content">
+        <div class="body-image">
+            <div class="body-text">
+                <h1>Welcome To <span style="color: red;">IJSE</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam harum, delectus fugiat veniam
+                    corporis distinctio rem corrupti laborum aut aliquid, placeat laudantium temporibus neque,
+                    laboriosam minus ea amet? Facilis, nobis.</p>
+                <a href="">Visit IJSE</a>
+            </div>
+        </div>
     </div>
 </body>
 
