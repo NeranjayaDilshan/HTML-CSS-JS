@@ -154,6 +154,42 @@
         // for of
         for (let value of cars) {
             console.log(value);
+        }
+
+
+        // objects
+        const obj = {
+            name: "BMW",
+            year: '2020',
+            color: 'Red'
+        }
+        console.log(obj);
+        console.log(obj.name);
+
+
+        const new_array = [
+            {
+                name: "BMW",
+                year: '2020',
+                color: 'Red'
+            },
+            {
+                name: "AUDI",
+                year: '2021',
+                color: 'White'
+            },
+            {
+                name: "BENZ",
+                year: '2024',
+                color: 'Black'
+            },
+        ];
+
+        console.log(new_array);
+
+        for (let obj of new_array) {
+            console.log(obj);
+            console.log(obj.color);
 
         }
 
