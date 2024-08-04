@@ -17,7 +17,12 @@
         }
 
         /*descendant selector  */
-        div p {
+        /* div p {
+            background-color: red;
+        } */
+
+        /*child selector  */
+        div>p{
             background-color: red;
         }
     </style>
@@ -29,8 +34,12 @@
         <p>this is para inside div</p>
         <h1>H1 inside div</h1>
         <section>
+            <div>
+                <p>p tag inside section and div</p>
+            </div>
             <p>p tag inside section</p>
         </section>
+        <p>p tag below section</p>
     </div>
     <p>p tag outside div</p>
 
