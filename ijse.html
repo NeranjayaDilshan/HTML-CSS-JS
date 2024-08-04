@@ -35,14 +35,33 @@
             background-color: red;
         }
 
+
+
+
+        /* pseudo classes */
         h1:hover {
             color: red;
             cursor: pointer;
+        }
+
+        /* pseudo elements */
+        .p_tag::first-line {
+            color: red;
+        }
+
+        /* pseudo elements */
+        .p_tag::first-letter {
+            font-size: 30px;
+            color: green;
         }
     </style>
 </head>
 
 <body>
+    <p class="p_tag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis impedit, accusantium porro facilis
+        similique
+        eligendi eum enim quisquam iure nisi eius commodi blanditiis repudiandae quam quis quidem pariatur incidunt
+        maxime?</p>
     <div>
         This is div element
         <p>this is para inside div</p>
